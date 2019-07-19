@@ -179,6 +179,7 @@ export default {
         this.$emit('setSpinner');
     },
     updated(){
+        console.log("git pull test");
         // console.log("updated");
         // this.EventBus.$emit('setSpinner');
     },
