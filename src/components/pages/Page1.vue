@@ -5,28 +5,6 @@
                 <div class="panorama-slider swiper-container">
                     <div class="swiper-wrapper">
                         <div class="item swiper-slide">
-                            <!-- <div class="article">
-                                <div class="spacer" style="height: 50px;"></div>
-
-                                
-                                <div class="text-block" style="">{{caption}}</div>
-                                <div class="spacer" style="height: 0px;"></div>
-
-                               
-                                <div class="text-block" style="font-size: 44px; font-weight: 700; line-height: 1.2;">{{title}}</div>
-                                <div class="spacer" style="height: 10px;"></div>
-
-                                
-                                <div class="text-block" style="letter-spacing: -0.25px;">{{maintext}}</div>
-                                <div class="spacer" style="height: 10px;"></div>
-
-                                
-                                <div class="text-block" style="font-size: 12px;" v-html="author">
-                                    
-                                </div>
-                                <div class="spacer" style="height: 90px;"></div>
-                            </div> -->
-
                             <div class="background-image swiper-lazy" :data-background="imgbackground" style="background-position: right top;"></div>
                         </div>
 
@@ -53,7 +31,7 @@ export default {
             imgbackground2: 'http://ordinary.dev.tebah.media/images/open/open-2@1x.png'
         }
     }
-    
+
 }
 </script>
 
