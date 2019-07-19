@@ -50,29 +50,34 @@ export default {
       // Navi TreeMenu Array
       treeData: [
         {
-          title: "청년초청집회",
-          open: false,
-          index: 1
-        },
-        {
-          title: "강사 프로필",
-          open: false,
-          index: 2
-        },
-        {
-          title: "콘셉트",
+          title: "첫 문장들",
           open: false,
           index: 3
         },
         {
-          title: "집회내용",
+          title: "그날의 함성",
           open: false,
-          index:4
+          index: 4
         },
         {
-          title: "참가신청",
+          title: "규정하지 않는 음악",
           open: false,
-          index: 5
+          index: 7
+        },
+        {
+          title: "음악 맛집",
+          open: false,
+          index:12
+        },
+        {
+          title: "Everyday is a New Beginning",
+          open: false,
+          index: 17
+        },
+        {
+          title: "하루키와 맥주",
+          open: false,
+          index: 23
         },
       ]
     };

@@ -1,35 +1,44 @@
 <template>
-    <div :id="pagenum" class="page-common animation-page swiper-slide" :data-brand-name="databrandNm" data-brand-url="">
+    <div :id="pagenum" class="page-common swiper-slide panorama-slider-page animation-page hide-header" :data-brand-name="databrandNm" data-brand-url="">
         <div class="page-common-inner" data-scrollbar>
             <div class="page-article">
-                <div class="spacer" style="height: 74px;"></div>
-                <div class="circle-left">
-                    <svg width="206" height="435" viewBox="0 0 206 435" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="none" fill-rule="evenodd">
-                            <g stroke="#FFC433" stroke-width="37">
-                                <circle cx="-16.5" cy="213" r="204"/>
-                            </g>
-                        </g>
-                    </svg>
-                </div>
-                <div class="circle-right"></div>
-                <!-- text-block -->
-                <div class="text-block">
-                    <img class="swiper-lazy" :data-src="bgImg" width="189" alt="" src="">
-                </div>
-                <div class="spacer" style="height: 34px;"></div>
-                <!-- text-block -->
-                <div 
-                    class="text-block" 
-                    style="position: relative; margin: 0 40px; padding: 28px 30px 32px; font-size: 15px; font-weight: 700; color: #000; letter-spacing: -0.2px; line-height: 25px; border-radius: 10px; background-color: #dfdbff;"
-                    v-html="Text"
-                >
-                    <img class="swiper-lazy leaf leaf-1" :data-src="leafImg" width="57" alt="" src="">
-                    <img class="swiper-lazy leaf leaf-2" :data-src="leafImg2" width="57" alt="" src="">
-                </div>
-                <div class="spacer" style="height: 70px;"></div>
-            </div>
+                <div class="panorama-slider swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="item swiper-slide">
+                            <!-- <div class="article">
+                                <div class="spacer" style="height: 50px;"></div>
 
+                                
+                                <div class="text-block" style="">{{caption}}</div>
+                                <div class="spacer" style="height: 0px;"></div>
+
+                               
+                                <div class="text-block" style="font-size: 44px; font-weight: 700; line-height: 1.2;">{{title}}</div>
+                                <div class="spacer" style="height: 10px;"></div>
+
+                                
+                                <div class="text-block" style="letter-spacing: -0.25px;">{{maintext}}</div>
+                                <div class="spacer" style="height: 10px;"></div>
+
+                                
+                                <div class="text-block" style="font-size: 12px;" v-html="author">
+                                    
+                                </div>
+                                <div class="spacer" style="height: 90px;"></div>
+                            </div> -->
+
+                            <div class="background-image swiper-lazy" :data-background="imgbackground" style="background-position: right top;"></div>
+                        </div>
+
+                        <div class="item swiper-slide">
+                            <div class="article content-vertical-bottom">
+                            </div>
+
+                            <div class="background-image swiper-lazy" :data-background="imgbackground2" style="background-position: left top;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -39,18 +48,9 @@ export default {
     data(){
         return {
             pagenum : 'page-1',
-            databrandNm: 'CBMC 한국대회 청년초청집회',
-            bgImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p01/02.explain_title@2x.png',
-            leafImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p01/leaf_01@2x.png',
-            leafImg2: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p01/leaf_02@2x.png',
-            Text: `
-                    CBMC는 실업인과 전문인들에게 복음을 전하여 예수그리스도가 구주이심을 증거하고 주님의 지상명령을 성취하는 국제적 사명공동체입니다.<br>
-					<br>
-                    킹덤 컴퍼니 대표들의 창업, 성경적 경영, 선교적 삶을 나누며 청년들이 하나님의 기업에 대한 비전을 발견하고 리더로서 준비할 수 있도록 합니다.<br>
-                    <br>
-                    창업아이템 실현을 돕는 직접적인 엑셀러레이터의 지원과 사업계획서 작성 코칭을 제공하여 실제적인 도움이 이루어지는 컨퍼런스를 마련합니다.<br>
-                    <br>
-                    청년들이 미래 리더로서 담대함으로 나아갈 수 있도록 격려하는 사랑과 용기, 하나됨의 축제를 지향합니다.`
+            databrandNm: 'Opening',
+            imgbackground: 'http://ordinary.dev.tebah.media/images/open/open-1@1x.png',
+            imgbackground2: 'http://ordinary.dev.tebah.media/images/open/open-2@1x.png'
         }
     }
     

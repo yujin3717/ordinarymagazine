@@ -1,7 +1,7 @@
 <template>
   <div id="wrap" class="max-container">
     <Spinner v-show="loading"/>
-    <Cover/>
+    <!-- <Cover/> -->
     <Guide/>
     <Header/>
     <Drawer/>
@@ -19,10 +19,6 @@ import Drawer from '@/components/navigation/Drawer.vue'
 import Footer from '@/components/footer/Footer.vue'
 import Spinner from '@/components/spinner/Spinner.vue'
 
-import Vue from 'vue'
-
-Vue.prototype.EventBus = new Vue();
-
 export default {
   components:{
     Main,
@@ -39,18 +35,7 @@ export default {
     }
   },
   mounted(){
-    var self = this;
-    // this.EventBus.$on('setSpinner', function(){
-    //     console.log("setSpinner");
-    //   });
-    // this.$nextTick(function () {
-    //   // 모든 화면이 렌더링된 후 실행합니다.
-    //   self.EventBus.$on('setSpinner', function(){
-    //     console.log("setSpinner");
-    //   });
-    //   // console.log("setSpinner");
-    //   self.loading = !self.loading;
-    // });
+    
   },
   methods:{
     setSpin: function() {

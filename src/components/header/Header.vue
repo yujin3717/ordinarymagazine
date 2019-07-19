@@ -18,8 +18,8 @@ Vue.prototype.EventBus = new Vue();
 export default {
     data(){
         return {
-            screenText: '제46차 CBMC 한국대회 청년초청집회',
-            number : 'No.46',
+            screenText: 'Ordinary Magazine',
+            number : 'Vol.01',
             book : '',
             flag : true,
             brand : '',

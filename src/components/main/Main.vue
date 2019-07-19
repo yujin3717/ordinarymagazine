@@ -3,11 +3,11 @@
         <div id="page-container-inner" class="page-slider-container swiper-container">
             <div class="swiper-wrapper">
                 <Page1/>
-                <Page2/>
+                <!-- <Page2/>
                 <Page3/>
                 <Page4/>
                 <Page5/>
-                <lastCover/>
+                <lastCover/> -->
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@ export default {
     },
     data(){
         return{
-            
+            panoramaSlider : null
         }
     },
     mounted(){
@@ -92,6 +92,8 @@ export default {
                   self.setScrollInfo(activeSlide,previousSlide);
                   // Countup Event
                   self.setCountup();
+                // Panorama Page
+
               },
               slideChange: function() {
                   //Progressbar set EventBus
@@ -158,32 +160,20 @@ export default {
         // Panorama Slider Page
         var panoramaSlider = new Swiper('.panorama-slider', {
             loop: false,
-            speed: 3000,
-            // autoplay: {
-            // 	stopOnLastSlide: true,
-            // },
+            speed: 2000,
+            /*autoplay: {
+                delay: 0,
+                // stopOnLastSlide: true,
+            },*/
             slidesPerView: 1,
             freeMode: true,
             nested: true,
             resistanceRatio: 0,
-            // freeModeMomentum: false,
             freeModeMomentumBounce: false,
-            on:{
-                init: function(){
-                    var slf = this;
-                    // 현재 페이지가 파노마라 페이지일경우 auto play set
-                    self.EventBus.$on('setPanorama', function(){
-                        slf.autoplay.delay = 0;
-                        slf.autoplay.stopOnLastSlide = true;
-                        slf.autoplay.start();
-                    });
-                    // 이전 페이지가 파노라마 페이지일 경우 페이지 초기화
-                    self.EventBus.$on('initPanorama', function(){
-                        slf.slideTo(0,0);
-                    });
-                }
-            }
+            parallax: true,
         });  
+
+        this.panoramaSlider = panoramaSlider;
 
         //   setSpinner
         this.$emit('setSpinner');
@@ -268,13 +258,20 @@ export default {
 
             if(isPanorama){
                 console.log("isPanorama");
+                var self = this;
                 // 파노라마 페이지 동작
-                this.EventBus.$emit('setPanorama');
+                this.panoramaSlider.autoplay.delay = 100;
+                this.panoramaSlider.autoplay.stopOnLastSlide = true;
+                this.panoramaSlider.autoplay.start();
+                this.panoramaSlider.on('reachEnd', function(){
+                    self.panoramaSlider.autoplay.stop();
+                });
             }
 
             if(prevPanorama){
+                console.log("initPanorama");
                 //파노라마 페이지 초기화
-                this.EventBus.$emit('initPanorama');
+                this.panoramaSlider.slideTo(0,0);
             }
         },
         setInnerSlide(){
