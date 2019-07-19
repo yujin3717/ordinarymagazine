@@ -13,7 +13,7 @@
             </div>
 
             <div class="page-article">
-                <div 
+                <div
                     v-for="item in profileblock"
                     :key="item.id"
                 >
@@ -22,7 +22,7 @@
                         <div class="photo swiper-lazy" :data-background="item.Img"></div>
                         <div class="summary">
                             <div class="name"><img class="swiper-lazy" :data-src="item.nameImg" width="77" alt="" src=""></div>
-                            <div 
+                            <div
                                 class="history"
                                 v-html="item.txt"
                             >
