@@ -1,42 +1,64 @@
 <template>
-    <div :id="pagenum" class="page-common swiper-slide panorama-slider-page animation-page hide-header" :data-brand-name="databrandNm" data-brand-url="">
-        <div class="page-common-inner" data-scrollbar>
-            <div class="page-article">
-                <div class="panorama-slider swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="item swiper-slide">
-                            <div class="background-image swiper-lazy" :data-background="imgbackground" style="background-position: right top;"></div>
-                        </div>
+	<div :id="pagenum" class="page-common swiper-slide panorama-slider-page" :data-brand-name="databrandNm" data-brand-url="">
+		<div class="page-common-inner" data-scrollbar>
 
-                        <div class="item swiper-slide">
-                            <div class="article content-vertical-bottom">
-                            </div>
+			<div class="page-article">
+				<div class="panorama-slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="item swiper-slide">
+							<div class="background-image swiper-lazy" :data-background="background" v-bind:style="{ 'background-position': backgroundP }"></div>
+						</div>
 
-                            <div class="background-image swiper-lazy" :data-background="imgbackground2" style="background-position: left top;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+						<div class="item swiper-slide">
+							<div class="article content-vertical-center" data-swiper-parallax-x="-20%">
+
+								<!-- text-block -->
+								<div
+									class="text-block"
+									style="font-size: 30px; font-weight: 700; font-style: italic; color: #fff; text-align: center;"
+									v-html="tit"
+								>
+								</div>
+								<div class="spacer" style="height: 12px;"></div>
+
+								<!-- text-block -->
+								<div
+									class="text-block"
+									style="font-size: 20px; font-weight: 700; color: #fff; line-height: 25px; text-align: center;"
+									v-html="txt"
+								>
+								</div>
+								<div class="spacer" style="height: 0;"></div>
+
+							</div>
+
+							<div class="background-image swiper-lazy" :data-background="background2" v-bind:style="{ 'background-position': background2P }"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
 </template>
 
 <script>
-export default {
-    data(){
-        return {
-            pagenum : 'page-1',
-            databrandNm: 'Opening',
-            imgbackground: 'http://ordinary.dev.tebah.media/images/open/open-1@1x.png',
-            imgbackground2: 'http://ordinary.dev.tebah.media/images/open/open-2@1x.png'
-        }
-    }
-
-}
+	export default {
+		data(){
+			return {
+				pagenum: 'page-1',
+				databrandNm: 'Opening',
+				background: 'http://ordinary.dev.tebah.media/vol.27/images/p01/bg-left.jpg',
+				backgroundP: 'right bottom',
+				background2: 'http://ordinary.dev.tebah.media/vol.27/images/p01/bg-right.jpg',
+				background2P: 'left bottom',
+				tit: 'LIVE',
+				txt: '살아있음을 느끼게 하는<br>모든 것들에 대한 찬사',
+			}
+		}
+	}
 </script>
 
 <style lang="scss">
 
 </style>
-
-
