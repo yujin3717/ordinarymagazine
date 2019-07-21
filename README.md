@@ -1,10 +1,24 @@
-<<<<<<< HEAD
-Tebahmedia digital brochure prototype
+Ordinary Magazine -Dev-
 
-cbmc 버전으로 되어있음
+20190719 1123
+Page1.vue 수정
+- indent 변경
+- 파노라마 슬라이더의 배경 이미지의 위치를 나타내는 background-position의 적용 방식 변경
+- slider parallax 속성 추가
+- 시안 내용 반영
 
-내용을 비우고 빈껍데기로 만들예정
-=======
-# ordinarymagazine
-오디너리 매거진
->>>>>>> 2f52db6c808a1456775e4ad04a424fbd00f88580
+index.html
+- indent 변경
+- webfont 변경
+
+Header.vue
+- indent 변경
+- vol 숫자 변경
+
+Main.vue
+- indent 변경
+- 코드 정렬
+
+Guide.vue
+- indent 변경
+- 가이드가 없을 때 slider가 init 되게 수정
