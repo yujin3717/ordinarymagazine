@@ -8,7 +8,28 @@
 				<Page4/>
 				<Page5/>
 				<Page6/>
-				<lastCover/>
+				<Page7/>
+				<Page8/>
+				<Page9/>
+				<Page10/>
+				<Page11/>
+				<Page12/>
+				<Page13/>
+				<Page14/>
+				<Page15/>
+				<Page16/>
+				<Page17/>
+				<Page18/>
+				<Page19/>
+				<Page20/>
+				<Page21/>
+				<Page22/>
+				<Page23/>
+				<Page24/>
+				<Page25/>
+				<Page26/>
+				<Page27/>
+				<!-- <lastCover/> -->
 			</div>
 		</div>
 	</div>
@@ -22,6 +43,27 @@ import Page3 from '../pages/Part1/Page3.vue'
 import Page4 from '../pages/Part2/Cover.vue'
 import Page5 from '../pages/Part2/Part1.vue'
 import Page6 from '../pages/Part2/Part2.vue'
+import Page7 from '../pages/Part3/Cover.vue'
+import Page8 from '../pages/Part3/Part1.vue'
+import Page9 from '../pages/Part3/Part2.vue'
+import Page10 from '../pages/Part3/Part3.vue'
+import Page11 from '../pages/Part3/Part4.vue'
+import Page12 from '../pages/Part4/Cover.vue'
+import Page13 from '../pages/Part4/Part1.vue'
+import Page14 from '../pages/Part4/Part2.vue'
+import Page15 from '../pages/Part4/Part3.vue'
+import Page16 from '../pages/Part5/Cover.vue'
+import Page17 from '../pages/Part5/Part1.vue'
+import Page18 from '../pages/Part5/Part2.vue'
+import Page19 from '../pages/Part5/Part3.vue'
+import Page20 from '../pages/Part5/Part4.vue'
+import Page21 from '../pages/Part5/Part5.vue'
+import Page22 from '../pages/Part5/Part6.vue'
+import Page23 from '../pages/Part5/Part7.vue'
+import Page24 from '../pages/Part6/Cover.vue'
+import Page25 from '../pages/Part6/Part1.vue'
+import Page26 from '../pages/Part6/Part2.vue'
+import Page27 from '../pages/Part6/Part3.vue'
 import lastCover from '../cover/lastCover.vue'
 import Vue from 'vue'
 
@@ -38,6 +80,27 @@ export default {
 		Page4,
 		Page5,
 		Page6,
+		Page7,
+		Page8,
+		Page9,
+		Page10,
+		Page11,
+		Page12,
+		Page13,
+		Page14,
+		Page15,
+		Page16,
+		Page17,
+		Page18,
+		Page19,
+		Page20,
+		Page21,
+		Page22,
+		Page23,
+		Page24,
+		Page25,
+		Page26,
+		Page27,
 		lastCover
 	},
 	data(){
