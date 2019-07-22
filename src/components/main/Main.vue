@@ -7,6 +7,7 @@
 				<Page3/>
 				<Page4/>
 				<Page5/>
+				<Page6/>
 				<lastCover/>
 			</div>
 		</div>
@@ -20,6 +21,7 @@ import Page2 from '../pages/OnAir/Page2.vue'
 import Page3 from '../pages/Part1/Page3.vue'
 import Page4 from '../pages/Part2/Cover.vue'
 import Page5 from '../pages/Part2/Part1.vue'
+import Page6 from '../pages/Part2/Part2.vue'
 import lastCover from '../cover/lastCover.vue'
 import Vue from 'vue'
 
@@ -35,6 +37,7 @@ export default {
 		Page3,
 		Page4,
 		Page5,
+		Page6,
 		lastCover
 	},
 	data(){
