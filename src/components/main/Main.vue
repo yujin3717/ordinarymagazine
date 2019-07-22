@@ -3,11 +3,8 @@
 		<div id="page-container-inner" class="page-slider-container swiper-container">
 			<div class="swiper-wrapper">
 				<Page1/>
-				<!-- <Page2/>
-				<Page3/>
-				<Page4/>
-				<Page5/>
-				<lastCover/> -->
+				<Page2/>
+				<lastCover/>
 			</div>
 		</div>
 	</div>
@@ -17,9 +14,6 @@
 import Swiper from 'swiper/dist/js/swiper.js'
 import Page1 from '../pages/Page1.vue'
 import Page2 from '../pages/Page2.vue'
-import Page3 from '../pages/Page3.vue'
-import Page4 from '../pages/Page4.vue'
-import Page5 from '../pages/Page5.vue'
 import lastCover from '../cover/lastCover.vue'
 import Vue from 'vue'
 
@@ -32,14 +26,12 @@ export default {
 	components:{
 		Page1,
 		Page2,
-		Page3,
-		Page4,
-		Page5,
 		lastCover
 	},
 	data(){
 		return{
-			panoramaSlider : null
+			panoramaSlider : null,
+			panoramaEnd: null
 		}
 	},
 	mounted(){
@@ -99,7 +91,9 @@ export default {
 
 					// Countup Event
 					self.setCountup();
+
 					// Panorama Page
+					self.panoramaSlide(activeSlide, previousSlide);
 				},
 				slideChange: function() {
 					//Progressbar set EventBus
@@ -118,6 +112,10 @@ export default {
 					var previousSlide  = this.slides[this.previousIndex];
 					self.activeSlide   = activeSlide;
 					self.previousSlide = previousSlide;
+
+					if(self.panoramaEnd){
+						self.EventBus.$emit('initPanorama');
+					}
 
 					//page Scrolling Event
 					var scrollbar = Scrollbar.get(activeSlide.firstChild);
@@ -141,23 +139,19 @@ export default {
 
 					// Inner Slider Page(해당 브로슈어는 이너슬라이드가 없으므로 뺌)
 					// self.setInnerSlide();
+
+					// Panorama Page
+					self.panoramaSlide(activeSlide, previousSlide);
 				}
 			},
-		//   virtual:{
-		//       slides: self.slides,
-		//       renderExternal(data){
-		//           self.virtualData = data;
-		//       }
-		//   }
 		});
 
 		// Swiper init EventBus
-		this.EventBus.$on('swiperInit', function(){
-			console.log('swiperInit');
+		// this.EventBus.$on('swiperInit', function(){
 			self.$nextTick(function(){
 				webMagazineSlider.init();
 			});
-		});
+		// });
 
 		// Vue EventBus를 이용하여 컴포넌트간 데이터를 주고받음
 		// Contents 페이지의 페이지 이동 Event 동작 수신
@@ -175,24 +169,54 @@ export default {
 		// Panorama Slider Page
 		var panoramaSlider = new Swiper('.panorama-slider', {
 			loop: false,
-			speed: 2000,
+			speed: 3000,
+			// autoplay: {
+			// stopOnLastSlide: true,
+			// },
 			slidesPerView: 1,
 			freeMode: true,
 			nested: true,
 			resistanceRatio: 0,
+			// freeModeMomentum: false,
 			freeModeMomentumBounce: false,
-			parallax: true,
+			on:{
+				init: function(){
+					var slf = this;
+					// 현재 페이지가 파노마라 페이지일경우 auto play set
+					self.EventBus.$on('setPanorama', function(activeSlide){
+						console.log(activeSlide);
+						console.log(slf);
+						slf.params.autoplay.delay = 0;
+						slf.params.autoplay.stopOnLastSlide = true;
+						slf.autoplay.start();
+						self.panoramaEnd = true;
+					});
+					// 이전 페이지가 파노라마 페이지일 경우 페이지 초기화
+					// 연속된 페이지의 경우 페이지 초기화부분의 수정이 필요함(연속된 경우 바로 페이지 초기화가 적용)
+					// 현재의 경우 전체 파노라마 페이지를 동시에 동작시킴 현재 페이지만 동작하도록 변경해야됨
+					self.EventBus.$on('initPanorama', function(){
+						slf.slideTo(0,0);
+					});
+				}
+			}
 		});
+		// var panoramaSlider = new Swiper('.panorama-slider', {
+		// 	loop: false,
+		// 	speed: 2000,
+		// 	slidesPerView: 1,
+		// 	freeMode: true,
+		// 	nested: true,
+		// 	resistanceRatio: 0,
+		// 	freeModeMomentumBounce: false,
+		// 	parallax: true,
+		// });
+		// this.panoramaSlider = panoramaSlider;
 
-		this.panoramaSlider = panoramaSlider;
-
-		//   setSpinner
+		// setSpinner
 		this.$emit('setSpinner');
 	},
 	updated(){
-		console.log("git pull test");
-		// console.log("updated");
-		// this.EventBus.$emit('setSpinner');
+
 	},
 	methods:{
 		animation(activeSlide, previousSlide){
@@ -233,13 +257,9 @@ export default {
 			var isAnipage = activeSlide.classList.contains('animation-page');
 			var prevAnipage = null;
 
-			var isPanorama = activeSlide.classList.contains('panorama-slider-page');
-			var prevPanorama = null;
-
 			if(previousSlide !== undefined){
 				prev = Array.from(previousSlide.getElementsByClassName('animate'));
 				prevAnipage = previousSlide.classList.contains('animation-start');
-				prevPanorama = previousSlide.classList.contains('panorama-slider-page');
 			}
 
 			if(prev !== null) {
@@ -266,20 +286,6 @@ export default {
 
 			if(prevAnipage){
 				previousSlide.classList.remove('animation-start');
-			}
-
-			if(isPanorama){
-				var self = this;
-				// 파노라마 페이지 동작
-				this.panoramaSlider.params.autoplay.delay = 100;
-				this.panoramaSlider.params.autoplay.stopOnLastSlide = true;
-				this.panoramaSlider.autoplay.start();
-			}
-
-			if(prevPanorama){
-				console.log("initPanorama");
-				//파노라마 페이지 초기화
-				this.panoramaSlider.slideTo(0,0);
 			}
 		},
 		setInnerSlide(){
@@ -424,6 +430,33 @@ export default {
 				}
 			}
 
+		},
+		panoramaSlide(activeSlide, previousSlide) {
+			var isPanorama   = activeSlide.classList.contains('panorama-slider-page');
+			var prevPanorama = null;
+
+			if ( previousSlide !== undefined ) {
+				prevPanorama = previousSlide.classList.contains('panorama-slider-page');
+			}
+
+			if ( isPanorama ) {
+				console.log("isPanorama");
+				var self = this;
+				// 파노라마 페이지 동작
+				// this.panoramaSlider.params.autoplay.delay = 100;
+				// this.panoramaSlider.params.autoplay.stopOnLastSlide = true;
+				// this.panoramaSlider.autoplay.start();
+				this.EventBus.$emit('setPanorama', activeSlide);
+			}
+
+			if ( prevPanorama ) {
+				//파노라마 페이지 초기화
+				// this.panoramaSlider.slideTo(0,0);
+
+				this.EventBus.$emit('initPanorama');
+
+
+			}
 		}
 	}
 }

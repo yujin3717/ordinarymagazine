@@ -1,107 +1,64 @@
 <template>
-    <div :id="pagenum" class="page-common swiper-slide" :data-brand-name="databrandNm" data-brand-url="">
-        <div class="page-common-inner" data-scrollbar>
+	<div :id="pagenum" class="page-common swiper-slide panorama-slider-page" :data-brand-name="databrandNm" data-brand-url="">
+		<div class="page-common-inner" data-scrollbar>
 
-            <div class="page-article">
-                <div class="spacer" style="height: 74px;"></div>
+			<div class="page-article">
+				<div class="panorama-slider swiper-container">
+					<div class="swiper-wrapper">
+						<div class="item swiper-slide">
+							<div class="background-image swiper-lazy" :data-background="background" v-bind:style="{ 'background-position': backgroundP }"></div>
+						</div>
 
-                <!-- text-block -->
-                <div class="text-block">
-                    <img class="swiper-lazy" :data-src="titleImg" width="234" alt="" src="">
-                </div>
-                <div class="spacer" style="height: 33px;"></div>
-            </div>
+						<div class="item swiper-slide">
+							<div class="article content-vertical-center" data-swiper-parallax-x="-20%">
 
-            <div class="page-article">
-                <div
-                    v-for="item in profileblock"
-                    :key="item.id"
-                >
-                    <!-- profile-block -->
-                    <a :href="item.href" target="_blank" rel="noopener noreferrer" class="profile-block animate fadeUp" data-animation data-animation-trigger="top">
-                        <div class="photo swiper-lazy" :data-background="item.Img"></div>
-                        <div class="summary">
-                            <div class="name"><img class="swiper-lazy" :data-src="item.nameImg" width="77" alt="" src=""></div>
-                            <div
-                                class="history"
-                                v-html="item.txt"
-                            >
-                            </div>
-                        </div>
-                    </a>
-                    <div class="spacer" :style="{height: item.height}"></div>
-                </div>
-            </div>
+								<!-- text-block -->
+								<div
+									class="text-block"
+									style="font-size: 30px; font-weight: 700; font-style: italic; color: #fff; text-align: center;"
+									v-html="tit"
+								>
+								</div>
+								<div class="spacer" style="height: 12px;"></div>
 
-            <div class="bubble right"></div>
-            <div class="bubble left">
-                <span></span>
-            </div>
-            <div class="leaf-area">
-                <span class="leaf"><img class="swiper-lazy" :data-src="leafImg" width="91" alt="" src=""></span>
-                <span class="leaf-bubble leaf-bubble-2"></span>
-                <span class="leaf-bubble leaf-bubble-3"></span>
-                <span class="leaf-bubble leaf-bubble-4"></span>
-            </div>
+								<!-- text-block -->
+								<div
+									class="text-block"
+									style="font-size: 20px; font-weight: 700; color: #fff; line-height: 25px; text-align: center;"
+									v-html="txt"
+								>
+								</div>
+								<div class="spacer" style="height: 0;"></div>
 
-        </div>
-    </div>
+							</div>
+
+							<div class="background-image swiper-lazy" :data-background="background2" v-bind:style="{ 'background-position': background2P }"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
 </template>
 
 <script>
-export default {
-    data(){
-        return {
-            pagenum: 'page-2',
-            databrandNm: 'CBMC 한국대회 청년초청집회',
-            titleImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p02/03.profile_title@2x.png',
-            profileblock: [
-                {
-                    href: 'http://bonmission.or.kr/',
-                    Img: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p02/choi_img@2x.png',
-                    nameImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p02/choi_txt@2x.png',
-                    txt: `(주)본월드 대표<br>
-                            (재단법인)본월드미션 이사장<br>
-                            (사단법인)본사랑 이사장`,
-                    height: '15px'
-                },
-                {
-                    href: 'http://www.ibusiness.co.kr/',
-                    Img: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p02/park_img@2x.png',
-                    nameImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p02/park_txt@2x.png',
-                    txt: `(주) 르호봇 비즈니스<br>
-                            인큐베이터 회장, 서울지역창업<br>
-                            보육센터 협의회장`,
-                    height: '15px'
-                },
-                {
-                    href: 'http://www.cntt.co.kr/',
-                    Img: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p02/joen_img@2x.png',
-                    nameImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p02/joen_txt@2x.png',
-                    txt: `전화성의 어드벤처<br>
-                            창업 엑셀러레이팅,<br>
-                            씨엔티테크 대표이사`,
-                    height: '15px'
-                },
-                {
-                    href: '#',
-                    Img: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/add-1/you_img@2x.png',
-                    nameImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/add-1/you_txt@2x.png',
-                    txt: `주안대학교 대학원 교수<br>
-											<br>
-											<br>`,
-                    height: '102px'
-                },
-            ],
-            leafImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p02/leaf_right@2x.png'
-
-        }
-    }
-}
+	export default {
+		data(){
+			return {
+				pagenum: 'page-2',
+				databrandNm: '',
+				background: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p01/bg-left.jpg',
+				backgroundP: 'right bottom',
+				background2: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p01/bg-right.jpg',
+				background2P: 'left bottom',
+				tit: 'LIVE',
+				txt: '살아있음을 느끼게 하는<br>모든 것들에 대한 찬사',
+			}
+		}
+	}
 </script>
 
 <style lang="scss">
 
 </style>
-
-
