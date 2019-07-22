@@ -17,6 +17,7 @@
             >
                 <div :style="{height: item.height}"></div>
                 <div class="content">{{ item.content }}</div>
+                <div class="spacer" style="height: 5px;"></div>
                 <div class="author">{{ item.author }}</div>
                 <div v-if="item.isLast" style="height: 70px;"></div>
             </div>
