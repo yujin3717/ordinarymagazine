@@ -385,9 +385,21 @@ export default {
 			var isPanorama   = activeSlide.classList.contains('panorama-slider-page');
 			var prevPanorama = null;
 			var prevpanoSlide = null;
-			var panoramaSlide = activeSlide.querySelector('.panorama-slider').swiper;
+			var panoramaSlide = new Swiper(activeSlide.querySelector('.panorama-slider'), {
+				loop: false,
+				speed: 2000,
+				/*autoplay: {
+					delay: 0,
+					// stopOnLastSlide: true,
+				},*/
+				slidesPerView: 1,
+				freeMode: true,
+				nested: true,
+				resistanceRatio: 0,
+				freeModeMomentumBounce: false,
+				parallax: true,
+			});
 			
-
 			if ( previousSlide !== undefined ) {
 				prevPanorama = previousSlide.classList.contains('panorama-slider-page');
 				prevpanoSlide = previousSlide.querySelector('.panorama-slider').swiper;
@@ -395,11 +407,12 @@ export default {
 
 			if ( isPanorama ) {
 				console.log("isPanorama");
-				var self = this;
 				//현재 페이지 파노라마 슬라이드 동작
-				panoramaSlide.params.autoplay.delay = 100;
-				panoramaSlide.params.autoplay.stopOnLastSlide = true;
-				panoramaSlide.autoplay.start();
+				this.$nextTick(function(){
+					panoramaSlide.params.autoplay.delay = 100;
+					panoramaSlide.params.autoplay.stopOnLastSlide = true;
+					panoramaSlide.autoplay.start();
+				});
 			}
 
 			if ( prevPanorama ) {
