@@ -1,5 +1,5 @@
 <template>
-	<div :id="pagenum" class="page-common swiper-slide panorama-slider-page" :data-brand-name="databrandNm" data-brand-url="">
+	<div :id="pagenum" class="page-common swiper-slide panorama-slider-page hide-header" :data-brand-name="databrandNm" data-brand-url="">
 		<div class="page-common-inner" data-scrollbar>
 
 			<div class="page-article">
