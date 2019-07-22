@@ -113,10 +113,6 @@ export default {
 					self.activeSlide   = activeSlide;
 					self.previousSlide = previousSlide;
 
-					if(self.panoramaEnd){
-						self.EventBus.$emit('initPanorama');
-					}
-
 					//page Scrolling Event
 					var scrollbar = Scrollbar.get(activeSlide.firstChild);
 					scrollbar.removeListener(self.scrollingEvent);
@@ -165,52 +161,6 @@ export default {
 
 		// Top으로 스크롤시 발생 bounce 제거
 		this.setNotBounce();
-
-		// Panorama Slider Page
-		var panoramaSlider = new Swiper('.panorama-slider', {
-			loop: false,
-			speed: 3000,
-			// autoplay: {
-			// stopOnLastSlide: true,
-			// },
-			slidesPerView: 1,
-			freeMode: true,
-			nested: true,
-			resistanceRatio: 0,
-			// freeModeMomentum: false,
-			freeModeMomentumBounce: false,
-			on:{
-				init: function(){
-					var slf = this;
-					// 현재 페이지가 파노마라 페이지일경우 auto play set
-					self.EventBus.$on('setPanorama', function(activeSlide){
-						console.log(activeSlide);
-						console.log(slf);
-						slf.params.autoplay.delay = 0;
-						slf.params.autoplay.stopOnLastSlide = true;
-						slf.autoplay.start();
-						self.panoramaEnd = true;
-					});
-					// 이전 페이지가 파노라마 페이지일 경우 페이지 초기화
-					// 연속된 페이지의 경우 페이지 초기화부분의 수정이 필요함(연속된 경우 바로 페이지 초기화가 적용)
-					// 현재의 경우 전체 파노라마 페이지를 동시에 동작시킴 현재 페이지만 동작하도록 변경해야됨
-					self.EventBus.$on('initPanorama', function(){
-						slf.slideTo(0,0);
-					});
-				}
-			}
-		});
-		// var panoramaSlider = new Swiper('.panorama-slider', {
-		// 	loop: false,
-		// 	speed: 2000,
-		// 	slidesPerView: 1,
-		// 	freeMode: true,
-		// 	nested: true,
-		// 	resistanceRatio: 0,
-		// 	freeModeMomentumBounce: false,
-		// 	parallax: true,
-		// });
-		// this.panoramaSlider = panoramaSlider;
 
 		// setSpinner
 		this.$emit('setSpinner');
@@ -434,28 +384,28 @@ export default {
 		panoramaSlide(activeSlide, previousSlide) {
 			var isPanorama   = activeSlide.classList.contains('panorama-slider-page');
 			var prevPanorama = null;
+			var prevpanoSlide = null;
+			var panoramaSlide = activeSlide.querySelector('.panorama-slider').swiper;
+			
 
 			if ( previousSlide !== undefined ) {
 				prevPanorama = previousSlide.classList.contains('panorama-slider-page');
+				prevpanoSlide = previousSlide.querySelector('.panorama-slider').swiper;
 			}
 
 			if ( isPanorama ) {
 				console.log("isPanorama");
 				var self = this;
-				// 파노라마 페이지 동작
-				// this.panoramaSlider.params.autoplay.delay = 100;
-				// this.panoramaSlider.params.autoplay.stopOnLastSlide = true;
-				// this.panoramaSlider.autoplay.start();
-				this.EventBus.$emit('setPanorama', activeSlide);
+				//현재 페이지 파노라마 슬라이드 동작
+				panoramaSlide.params.autoplay.delay = 100;
+				panoramaSlide.params.autoplay.stopOnLastSlide = true;
+				panoramaSlide.autoplay.start();
 			}
 
 			if ( prevPanorama ) {
-				//파노라마 페이지 초기화
-				// this.panoramaSlider.slideTo(0,0);
-
-				this.EventBus.$emit('initPanorama');
-
-
+				console.log("initSlide");
+				//이전 페이지 파노라마 슬라이드 초기화
+				prevpanoSlide.slideTo(0,0);
 			}
 		}
 	}
