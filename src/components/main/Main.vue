@@ -402,7 +402,9 @@ export default {
 			
 			if ( previousSlide !== undefined ) {
 				prevPanorama = previousSlide.classList.contains('panorama-slider-page');
-				prevpanoSlide = previousSlide.querySelector('.panorama-slider').swiper;
+				if(previousSlide.querySelector('.panorama-slider') != null){
+					prevpanoSlide = previousSlide.querySelector('.panorama-slider').swiper;
+				}
 			}
 
 			if ( isPanorama ) {
