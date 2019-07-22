@@ -50,6 +50,16 @@ export default {
       // Navi TreeMenu Array
       treeData: [
         {
+          title: "OPENING",
+          open: false,
+          index: 1
+        },
+        {
+          title: "ON AIR",
+          open: false,
+          index: 2
+        },
+        {
           title: "첫 문장들",
           open: false,
           index: 3
@@ -72,12 +82,12 @@ export default {
         {
           title: "Everyday is a New Beginning",
           open: false,
-          index: 17
+          index: 16
         },
         {
           title: "하루키와 맥주",
           open: false,
-          index: 23
+          index: 24
         },
       ]
     };
