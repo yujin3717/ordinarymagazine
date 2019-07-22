@@ -4,6 +4,7 @@
 			<div class="swiper-wrapper">
 				<Page1/>
 				<Page2/>
+				<Page3/>
 				<lastCover/>
 			</div>
 		</div>
@@ -14,6 +15,7 @@
 import Swiper from 'swiper/dist/js/swiper.js'
 import Page1 from '../pages/Page1.vue'
 import Page2 from '../pages/Page2.vue'
+import Page3 from '../pages/Part1/Page3.vue'
 import lastCover from '../cover/lastCover.vue'
 import Vue from 'vue'
 
@@ -26,6 +28,7 @@ export default {
 	components:{
 		Page1,
 		Page2,
+		Page3,
 		lastCover
 	},
 	data(){
