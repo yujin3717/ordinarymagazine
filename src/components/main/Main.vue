@@ -5,6 +5,8 @@
 				<Page1/>
 				<Page2/>
 				<Page3/>
+				<Page4/>
+				<Page5/>
 				<lastCover/>
 			</div>
 		</div>
@@ -13,9 +15,11 @@
 
 <script>
 import Swiper from 'swiper/dist/js/swiper.js'
-import Page1 from '../pages/Page1.vue'
-import Page2 from '../pages/Page2.vue'
+import Page1 from '../pages/Opening/Page1.vue'
+import Page2 from '../pages/OnAir/Page2.vue'
 import Page3 from '../pages/Part1/Page3.vue'
+import Page4 from '../pages/Part2/Cover.vue'
+import Page5 from '../pages/Part2/Part1.vue'
 import lastCover from '../cover/lastCover.vue'
 import Vue from 'vue'
 
@@ -29,6 +33,8 @@ export default {
 		Page1,
 		Page2,
 		Page3,
+		Page4,
+		Page5,
 		lastCover
 	},
 	data(){
