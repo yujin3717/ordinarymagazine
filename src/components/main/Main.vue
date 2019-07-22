@@ -218,11 +218,11 @@ export default {
 		});
 
 		// Swiper init EventBus
-		// this.EventBus.$on('swiperInit', function(){
+		this.EventBus.$on('swiperInit', function(){
 			self.$nextTick(function(){
 				webMagazineSlider.init();
 			});
-		// });
+		});
 
 		// Vue EventBus를 이용하여 컴포넌트간 데이터를 주고받음
 		// Contents 페이지의 페이지 이동 Event 동작 수신

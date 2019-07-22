@@ -1,8 +1,19 @@
 <template>
     <div id="cover" @click.prevent="moveMain($event)">
-        <div class="icon">
-            <div class="overlay"></div>
-            <object class="poster" :data="poster" type="image/svg+xml"></object>
+        <div class="logo">
+            <div class="title">
+                <svg xmlns="http://www.w3.org/2000/svg" width="279" height="29" viewBox="0 0 279 29">
+                    <path id="logo-ordiay" d="M262.542 27.864h5.84V16.536l9.958-15.232h-6.927l-5.95 9.943-5.616-9.943h-7.26l9.955 15.232zm-65.346-10.58h-6.484l3.222-8.25zm-16.964 10.58h6.437l2.208-5.627h10.294l2.284 5.627h6.587l-11.529-26.56h-4.828zm-61.39 0h5.84V1.304h-5.84zM85.119 6.708h3.443c1.223 0 2.39.155 3.5.467 1.11.313 2.078.783 2.9 1.408a6.759 6.759 0 0 1 1.966 2.38c.488.965.732 2.095.732 3.397 0 1.5-.244 2.77-.732 3.806-.487 1.039-1.155 1.876-2.002 2.516-.847.637-1.852 1.093-3.014 1.368-1.16.276-2.414.411-3.76.411h-3.033zm-5.839 21.156h9.545c1.97 0 3.856-.288 5.651-.864 1.798-.573 3.383-1.417 4.756-2.53a12.221 12.221 0 0 0 3.274-4.128c.81-1.637 1.215-3.532 1.215-5.681 0-2.427-.417-4.49-1.252-6.191-.838-1.7-1.965-3.082-3.387-4.145-1.422-1.064-3.09-1.832-4.999-2.307-1.908-.475-3.924-.714-6.044-.714h-8.759zM49.634 6.257h3.817c.525 0 1.06.037 1.61.11a4.71 4.71 0 0 1 1.46.434c.425.212.773.52 1.048.918.273.401.41.938.41 1.613 0 .726-.154 1.29-.466 1.688a2.74 2.74 0 0 1-1.179.881c-.474.19-1.005.3-1.592.34-.587.037-1.142.054-1.665.054h-3.443zm-5.841 21.607h5.843V17.248h2.883l5.544 10.616h7.003l-6.743-11.217c1.872-.35 3.298-1.181 4.27-2.493.974-1.315 1.46-2.907 1.46-4.783 0-1.55-.267-2.846-.806-3.884-.535-1.037-1.26-1.861-2.17-2.477-.911-.61-1.973-1.048-3.184-1.312a18.02 18.02 0 0 0-3.838-.394H43.793zM8.309 8.45a7.603 7.603 0 0 1 2.601-1.782c1.012-.423 2.14-.637 3.387-.637 1.248 0 2.378.214 3.39.637a7.626 7.626 0 0 1 2.6 1.782 7.87 7.87 0 0 1 1.666 2.72c.386 1.051.58 2.189.58 3.414 0 1.25-.194 2.396-.58 3.432a7.91 7.91 0 0 1-1.665 2.703 7.626 7.626 0 0 1-2.601 1.782c-1.012.426-2.142.637-3.39.637-1.248 0-2.375-.211-3.387-.637a7.602 7.602 0 0 1-2.6-1.782 7.835 7.835 0 0 1-1.666-2.703c-.388-1.036-.58-2.181-.58-3.432 0-1.225.192-2.363.58-3.414a7.796 7.796 0 0 1 1.665-2.72zM4.043 24.77c1.272 1.214 2.78 2.144 4.529 2.794 1.746.65 3.655.975 5.725.975 2.073 0 3.982-.325 5.728-.975 1.746-.65 3.257-1.58 4.529-2.794 1.272-1.213 2.265-2.683 2.977-4.408.71-1.726 1.066-3.65 1.066-5.778 0-2.124-.356-4.051-1.066-5.777-.712-1.725-1.705-3.195-2.977-4.408-1.272-1.211-2.783-2.144-4.53-2.794C18.28.955 16.37.63 14.298.63c-2.07 0-3.979.325-5.725.975-1.749.65-3.257 1.583-4.53 2.794-1.274 1.213-2.264 2.683-2.976 4.408C.354 10.533 0 12.46 0 14.584c0 2.127.354 4.052 1.066 5.778.712 1.725 1.702 3.195 2.977 4.408z"/>
+                    <path id="logo-r" d="M227.048 6.253h3.82c.523 0 1.06.037 1.608.11.55.077 1.037.222 1.462.434.422.211.77.519 1.046.918.275.401.413.938.413 1.612 0 .726-.158 1.29-.47 1.689a2.74 2.74 0 0 1-1.178.88c-.474.19-1.005.301-1.59.34-.587.038-1.142.055-1.665.055h-3.446zM221.21 27.86h5.838V17.243h2.884l5.538 10.617h7l-6.737-11.217c1.872-.35 3.294-1.182 4.266-2.494.976-1.314 1.462-2.907 1.462-4.783 0-1.55-.268-2.845-.806-3.884-.535-1.036-1.26-1.86-2.171-2.476-.911-.61-1.97-1.049-3.18-1.312a18.02 18.02 0 0 0-3.837-.394H221.21z"/>
+                    <path id="logo-n" d="M158.74 1.3l-11.266 18.46h-.076V1.3h-5.838v26.56h7.636l11.566-18.905h.074V27.86h5.84V1.3z"/>
+                </svg>
+            </div>
+            <div class="subtitle">{{subtitle}}</div>
+        </div>
+
+        <div class="vol" v-html="vol"></div>
+
+        <div class="background" :style="{'background-image': backgroundImg}">
             <div class="message">
                 <div class="message-inner">
                     <svg class="pointer" xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 24 33">
@@ -17,14 +28,7 @@
                 </div>
             </div>
         </div>
-        <div class="content">
-            <div class="time"><img :src="coverImg" width="255" alt=""></div>
-            <div class="contact">
-                <a class="stopProp" @click.stop :href="linkSrc" target="_blank" rel="noopener noreferrer"><i class="cuscon-android-home"></i> <span class="text">{{linkTxt}}</span></a> |
-                <a class="stopProp" @click.stop :href="'tel:' + tel"><i class="cuscon-android-call animate"></i> <span class="text">{{telTxt}}</span></a></div>
-            <div class="amount"><img :src="amount" width="84" alt=""></div>
-            <div class="logo"><img :src="logo" width="113" alt=""></div>
-        </div>
+        <div class="background-gray" :style="{'background-image': backgroundImg2}"></div>
     </div>
 </template>
 
@@ -36,26 +40,19 @@ Vue.prototype.EventBus = new Vue();
 export default {
     data(){
         return{
-            poster: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/cover/cover.svg',
-            coverImg : 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/cover/time.png',
-            linkSrc: 'http://www.cbmc.or.kr',
-            tel: '02-717-0111',
-            amount: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/cover/money@2x.png',
-            logo: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/cover/logo@2x.png',
-            linkTxt: 'www.cbmc.or.kr',
-            telTxt: '02)717-0111~2',
-            isClick: true
+            subtitle: 'MAGAZINE',
+            vol : `vol . <span class="kor">27</span>`,
+            backgroundImg: `url('http://ordinary.dev.tebah.media/vol.27/images/cover/cover.jpg')`,
+            backgroundImg2: `url('http://ordinary.dev.tebah.media/vol.27/images/cover/cover-gray.jpg')`
         }
     },
     mounted(){
-        
+
     },
     methods:{
         moveMain(target){
             var cover = document.querySelector('#cover');
-            var coverTimer;
-            
-            // this.isClick = false;
+
             if ( ! cover.classList.contains('hide') ) {
                 cover.classList.add('hide');
                 cover.addEventListener('animationend', function(ev) {
