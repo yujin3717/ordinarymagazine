@@ -48,9 +48,9 @@
 			return {
 				pagenum: 'page-1',
 				databrandNm: 'Opening',
-				background: 'http://ordinary.dev.tebah.media/vol.27/images/p01/bg-left.jpg',
+				background: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p01/bg-left.jpg',
 				backgroundP: 'right bottom',
-				background2: 'http://ordinary.dev.tebah.media/vol.27/images/p01/bg-right.jpg',
+				background2: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p01/bg-right.jpg',
 				background2P: 'left bottom',
 				tit: 'LIVE',
 				txt: '살아있음을 느끼게 하는<br>모든 것들에 대한 찬사',
