@@ -1,4 +1,4 @@
-Ordinary Magazine -Dev-
+Ordinary Magazine Vol.27
 20190722
 Main.vue
 - lastCover 추가를 위한 주석 해제
