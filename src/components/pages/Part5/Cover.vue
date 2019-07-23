@@ -28,7 +28,7 @@
 			return {
 				pagenum: 'page-16',
 				databrandNm: 'Every is a New Beginning',
-				background: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p07/content-1/01.jpg',
+				background: 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p07/content-1/01.jpg',
 				title: `Everyday is<br>
                     a new Beginning`,
                 content: `폴 스미스의 유쾌함은 견고했다.<br>

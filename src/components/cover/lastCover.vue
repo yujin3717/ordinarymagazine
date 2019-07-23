@@ -27,7 +27,7 @@ export default {
         return {
             pagenum: 'last-cover',
             databrandNm: 'CLOSING',
-            background: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/cover/lastcover.jpg',
+            background: 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/cover/lastcover.jpg',
             title: '매거진을 평가해주세요',
             button: `<a href="https://forms.gle/mVU8X3oD5PiQyZBL7" target="_blank" rel="noopener noreferrer">참여하기 <i class="cuscon-ios-arrow-right"></i></a>`,
             footTitle: '광 고 문 의',

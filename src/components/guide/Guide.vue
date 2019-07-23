@@ -24,8 +24,8 @@ Vue.prototype.EventBus = new Vue();
 export default {
 	data(){
 		return {
-			guideImg : 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/guide/01.png',
-			srcSet : 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/guide/01@2x.png',
+			guideImg : 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/guide/01.png',
+			srcSet : 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/guide/01@2x.png',
 			flag: true,
 		}
 	},

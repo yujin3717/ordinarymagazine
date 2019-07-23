@@ -28,9 +28,9 @@
 			return {
 				pagenum: 'page-7',
 				databrandNm: '규정하지 않는 음악',
-				background: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p05/panorama-01.jpg',
+				background: 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p05/panorama-01.jpg',
                 backgroundP: 'right bottom',
-                backgroundR: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p05/panorama-02.jpg',
+                backgroundR: 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p05/panorama-02.jpg',
                 backgroundPR: 'left bottom'
 			}
 		}

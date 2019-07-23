@@ -39,7 +39,7 @@
 			return {
 				pagenum: 'page-2',
 				databrandNm: '',
-				background: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p02/bg-left.jpg',
+				background: 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p02/bg-left.jpg',
 				backgroundP: 'right bottom',
 				description: `<div class="kor">“ 라디오는 생각을 위한 극장이고, 텔레비전은 생각 없는 이들을 위한 극장이다.</div>
 									<div class="eng">Radio is the theater of the mind, television is the theater of the mindless.”</div>

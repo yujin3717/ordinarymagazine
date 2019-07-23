@@ -39,9 +39,9 @@
 			return {
 				pagenum: 'page-24',
 				databrandNm: '하루키와 맥주',
-				background: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p08/dobira-1.jpg',
+				background: 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p08/dobira-1.jpg',
                 backgroundP: 'right bottom',
-                backgroundR: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p08/dobira-2.jpg',
+                backgroundR: 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p08/dobira-2.jpg',
                 backgroundPR: 'left bottom',
 				title: '하루키와 맥주',
 				txt: 'Editor 이소진 Photographer 김한나',

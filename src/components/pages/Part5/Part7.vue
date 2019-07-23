@@ -19,8 +19,8 @@
 			return {
 				pagenum: 'page-23',
                 databrandNm: 'Every is a New Beginning',
-                contentImg: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p07/content-4/01.jpg',
-                contentImg2: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p07/content-4/02.jpg',
+                contentImg: 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p07/content-4/01.jpg',
+                contentImg2: 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p07/content-4/02.jpg',
 			}
 		}
 	}

@@ -35,8 +35,8 @@ export default {
         return{
             pagenum : 'page-18',
             databrandNm: 'Every is a New Beginning',
-            contentImg: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p07/content-2/01.png',
-            contentImg2: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p07/content-2/02.png',
+            contentImg: 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p07/content-2/01.png',
+            contentImg2: 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p07/content-2/02.png',
             content: `<strong>바이어드 레인의 작은 숍</strong><br>
                     영국의 대표적인 디자이너이자 기사 작위를 보유한 폴 스미스는 자신의 이름을 딴 패션 브랜드를 50여 년간 최정상에서 이끌고 있다. 전 세계 73개국에 매장을 운영하며 지금까지도 모든 디렉팅을 직접 한다. 결코 쉽지 않은 행보다. 그 시작은 작은 단칸방이었다. 폴 스미스는 1970년 영국 북부인 노팅엄 6 바이야드 레인에 쇼룸을 오픈했다. 가로와 세로가 약 3m 되는 좁은 방이었지만 그래도 매장이라고 불렀다. 매장은 금요일과 토요일에만 문을 열었고 생계를 유지하기 위해 택시를 몰거나 아르바이트를 해야 했다. 힘이 되어 준 건 지금의 아내인 폴린이었다. 그에게 옷을 만드는 법을 알려준 것도, 매장을 내라고 용기를 준 것도 그였다. 매장은 3년 뒤, 10 바이야드 레인으로 이전하면서 정규적으로 운영하는 공간으로 성장했다. 1976년 폴 스미스는 파리 컬렉션에서 첫 쇼를 선보이게 된다. 한 호텔의 객실이었다. “나의 첫 컬렉션은 셔츠 6벌, 점퍼 2벌, 수트 2벌로 구성했으며 검은색 펠트 천을 덮은 침대 위에 옷을 펼쳐 놓았다. 쇼 마지막 날 딱 한 명의 손님이 찾아왔다. 그 사람이 주문하면서 나의 사업이 시작되었다.”<br>
                     전시장에는 첫 매장의 크기를 그대로 재현한 공간이 있다. 몇 걸음도 안 되는 작디작은 공간이다. 화려한 볼거리가 많은 전시임에도 공간이 가장 기억에 남는 것은 왜일까. 다음 세대의 디자이너들에게 가장 하고 싶은 메시지가 이곳에 압축되어 있다.`,

@@ -39,9 +39,9 @@
 			return {
 				pagenum: 'page-12',
 				databrandNm: '음악 맛집',
-				background: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p06/open-1.jpg',
+				background: 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p06/open-1.jpg',
                 backgroundP: 'right bottom',
-                backgroundR: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p06/open-2.jpg',
+                backgroundR: 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p06/open-2.jpg',
                 backgroundPR: 'left bottom',
 				title: '음악 맛집',
 				txt: 'Editor 백승원  Photographer 박희웅',

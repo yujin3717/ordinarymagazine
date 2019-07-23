@@ -17,7 +17,7 @@ export default {
         return{
             pagenum : 'page-27',
             databrandNm: '하루키와 맥주',
-            Img: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p08/02.jpg'
+            Img: 'https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p08/02.jpg'
         }
     }
 }

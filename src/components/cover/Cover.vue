@@ -41,8 +41,8 @@ export default {
         return{
             subtitle: 'MAGAZINE',
             vol : `vol . <span class="kor">27</span>`,
-            backgroundImg: `url('http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/cover/cover.jpg')`,
-            backgroundImg2: `url('http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/cover/cover-gray.jpg')`
+            backgroundImg: `url('https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/cover/cover.jpg')`,
+            backgroundImg2: `url('https://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/cover/cover-gray.jpg')`
         }
     },
     mounted(){
