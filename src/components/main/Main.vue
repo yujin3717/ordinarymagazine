@@ -29,7 +29,7 @@
 				<Page25/>
 				<Page26/>
 				<Page27/>
-				<!-- <lastCover/> -->
+				<lastCover/>
 			</div>
 		</div>
 	</div>
@@ -474,7 +474,7 @@ export default {
 				freeModeMomentumBounce: false,
 				parallax: true,
 			});
-			
+
 			if ( previousSlide !== undefined ) {
 				prevPanorama = previousSlide.classList.contains('panorama-slider-page');
 				if(previousSlide.querySelector('.panorama-slider') != null){

@@ -30,17 +30,17 @@
                             </div>
 
                             <div class="pause">
-                                <button id="pause" 
-                                    v-bind:style="{display:[playing? 'inline-block' : 'none']}" 
+                                <button id="pause"
+                                    v-bind:style="{display:[playing? 'inline-block' : 'none']}"
                                     v-show="playing"
                                     @click.stop="pause"
                                     type="button"
                                     class="pause-btn"><i class="cuscon-ios-pause"></i></button>
-                                <button id="play" 
+                                <button id="play"
                                     v-bind:style="{display:[paused? 'inline-block' : 'none']}"
-                                    v-show="paused" 
+                                    v-show="paused"
                                     @click.stop="play"
-                                    type="button" 
+                                    type="button"
                                     class="replay-btn"><i class="cuscon-play"></i></button>
                             </div>
                         </div>
@@ -127,7 +127,7 @@ export default {
             document.getElementById('innervideoPlayer').muted = this.ismuted;
         },
         setVideo(){
-            
+
         },
         setEnded(){
             this.playing = false;
@@ -148,7 +148,7 @@ export default {
         }
     },
     computed:{
-        paused() { 
+        paused() {
             return !this.playing;
         }
     }

@@ -1,4 +1,19 @@
 Ordinary Magazine -Dev-
+20190722
+Main.vue
+- lastCover 추가를 위한 주석 해제
+
+Cover.vue
+- .kor class의 스타일 추가
+
+Page3.vue
+- author와 content 사이에 간격 추가
+
+lastCover.vue
+- 페이지 추가
+
+README
+- README.md 파일이 있기 때문에 확장자가 없는 README 파일 삭제
 
 20190719 1123
 Page1.vue 수정

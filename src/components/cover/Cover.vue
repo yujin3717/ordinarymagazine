@@ -9,9 +9,8 @@
                 </svg>
             </div>
             <div class="subtitle">{{subtitle}}</div>
+            <div class="vol" v-html="vol"></div>
         </div>
-
-        <div class="vol" v-html="vol"></div>
 
         <div class="background" :style="{'background-image': backgroundImg}">
             <div class="message">
@@ -74,6 +73,10 @@ export default {
     }
     .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
         opacity: 0;
+    }
+
+    .kor {
+        font-family: 'Nanum Myeongjo', sans-serif;
     }
 </style>
 
