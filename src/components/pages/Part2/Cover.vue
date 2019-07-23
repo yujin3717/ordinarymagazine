@@ -39,9 +39,9 @@
 			return {
 				pagenum: 'page-4',
 				databrandNm: '그날의 함성',
-				background: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p04/1-1@2x.jpg',
+				background: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p04/1-1@2x.jpg',
                 backgroundP: 'right bottom',
-                backgroundR: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p04/1-2@2x.jpg',
+                backgroundR: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p04/1-2@2x.jpg',
                 backgroundPR: 'left bottom',
 				title: '그날의 함성',
 				txt: 'Editor 이소진',

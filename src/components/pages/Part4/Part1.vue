@@ -46,11 +46,11 @@ export default {
         return{
             pagenum : 'page-13',
             databrandNm: '음악 맛집',
-            titelImg: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p06/c01.jpg',
+            titelImg: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p06/c01.jpg',
             titletxt: `일정 수준의 이상의 맛과 재미를 동시에 만족하는 공간은 흔하지 않다.<br>
                     까다로운 취향을 가진 이를 만족시켜줄 독창적이면서도 색다른 공간 네 곳.`,
-            contentImg: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p06/c02.jpg',
-            contentImg2: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p06/c03.jpg',
+            contentImg: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p06/c02.jpg',
+            contentImg2: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p06/c03.jpg',
             content: `<strong>청담 겟올라잇</strong><br>
                     과거 서울 청담동은 대한민국 상류층의 문화 발상지 중 하나로 최신 트렌드가 살아 숨쉬는 동네였다. 그러나 현재는 화려한 헤어숍과 럭셔리 부티크가 가득한 곳으로만 인식되고 있다. 이런 천편일률적이면서도 어딘지 모르게 딱딱하고 불편한 청담동 특유의 분위기 속에서, 즐겁고 신나는 공연을 지향하는 겟올라잇은 분명 이제까지 보던 여타 라운지 계열의 장소들과는 결을 달리 한다. 어떤 곳에 있더라도 무대를 볼 수 있도록 자리를 배치했고, 조명과 인테리어의 세심한 디테일 구성이 돋보인다. 공연 중에는 사운드 엔지니어가 태블릿 컴퓨터를 들고 구석구석을 돌아다니며 실시간으로 점검하는 등 음향에 많은 신경을 쏟고 있다. 클래식, 재즈, 퓨전음악 등 장르의 제한을 두지 않고 관객과 소통할 수 있는 다양한 공연을 선보인다. 또한 무대 연출이나 프로그램 구성에 심혈을 기울이고 있는 만큼 공연에 대한 만족도가 높아 주말에는 테이블 예약이 힘들 정도로 열광적인 호응을 이끌어내고 있다. 국내외 수많은 대회에서 입상한 바텐더들이 서빙을 해주는 칵테일 또한 특별하다. 겟올라잇에서만 맛볼 수 있는 여름 한정 시그니처 칵테일 ‘가든 브리즈’는 럼에 저온 숙성한 파인애플을 넣어 완성해 민트의 상쾌함과 열대과일의 달콤함을 동시에 즐길 수 있다.`,
             content2: `<strong>바 81</strong><br>

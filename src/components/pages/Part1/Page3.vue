@@ -32,7 +32,7 @@ export default {
             pagenum : 'page-3',
             databrandNm: '첫 문장들',
             styleobject:{
-                backgroundImage: `url('http://ordinary.dev.tebah.media/vol.27/images/pages/p03/01.jpg')`,
+                backgroundImage: `url('http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p03/01.jpg')`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center center',
             },

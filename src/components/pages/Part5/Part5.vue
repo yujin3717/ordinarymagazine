@@ -28,9 +28,9 @@
 			return {
 				pagenum: 'page-21',
 				databrandNm: 'Every is a New Beginning',
-				background: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p07/panorama-2/1.png',
+				background: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p07/panorama-2/1.png',
                 backgroundP: 'right bottom',
-                backgroundR: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p07/panorama-2/2.png',
+                backgroundR: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p07/panorama-2/2.png',
                 backgroundPR: 'left bottom'
 			}
 		}

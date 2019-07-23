@@ -19,8 +19,8 @@
 			return {
 				pagenum: 'page-23',
                 databrandNm: 'Every is a New Beginning',
-                contentImg: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p07/content-4/01.jpg',
-                contentImg2: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p07/content-4/02.jpg',
+                contentImg: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p07/content-4/01.jpg',
+                contentImg2: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p07/content-4/02.jpg',
 			}
 		}
 	}

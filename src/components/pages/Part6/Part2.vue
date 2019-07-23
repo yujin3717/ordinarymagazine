@@ -44,7 +44,7 @@ export default {
         return{
             pagenum : 'page-26',
             databrandNm: '하루키와 맥주',
-            titelImg: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p08/01.jpg',
+            titelImg: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p08/01.jpg',
             titletxt: `좋아하는 것들을 나열하면 그 사람이 보인다.<br>
                     하루키를 읽다 보면 시린 맥주 한 모금이 간절해진다.`,
             content: `<strong>굴 튀김과 삿포로</strong><br>

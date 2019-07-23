@@ -78,8 +78,8 @@ export default {
             isClick: false,
             pagenum : 'page-17',
             databrandNm: 'Every is a New Beginning',
-            poster: 'http://ordinary.dev.tebah.media/vol.27/video/video-poster.jpg',
-            videosrc: 'http://ordinary.dev.tebah.media/vol.27/video/video.mp4',
+            poster: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/video/video-poster.jpg',
+            videosrc: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/video/video.mp4',
             videotitle: '',
             content: `폴 스미스의 전시가 한국을 찾는다는 소식을 들었을 때 문득 9년 전 열렸던 전시 하나가 떠올랐다. 대림미술관의 &lt;Inside Paul Smith&gt;. 관람객 4만 명이라는 놀라운 흥행 성적을 거뒀던 전시다. 아는 사람만 찾아갔던 사진 전문 미술관에서 전시만 열렸다 하면 줄을 서서 입장하는 미술관으로 터닝포인트가 되었던 시기다. 실제로 체감한 폴 스미스의 브랜드 파워는 대단했다. 2017년 도쿄의 편집숍인 ‘라카구la kagu’에서 마련한 전시도 그랬다. 편집숍 맨 위층에는 폴 스미스가 디자인할 때 영감을 받은 책과 사진 등을 주제별로 전시하는 한편, 컬래버레이션 의상을 선보였다. 한정판이라 그랬는지 선보인 가죽 자켓은 이미 매진된 뒤였다. 이번에 열리는 전시 역시 전적이 화려하다. &lt;Hello, My name is Paul Smith&gt;는 2013년 런던 디자인뮤지엄the Design Museum에서 기획한 전시로 34만 명이라는 미술관 역사상 가장 많은 관람 수를 기록했다. 이 투어 전시가 11번째로 우리나라를 찾았다. 누구나 인정하는 최고의 패션 디자이너지만 패션에 국한된 전시였다면 지금의 인기를 구가하기 어려웠을 것이다. 디자인, 미술, 사진, 건축 등 다양한 분야를 아우르는 내용의 대부분은 그의 일상과 연관된 것들이다. 그가 좋아하는 것들로 가득 꾸린 방은 즐겁고, 유쾌하고, 신기하고, 호기심이 넘친다. 그건 폴 스미스라는 인물 그 자체다. 이번 전시는 2010년보다 좀 더 진화한 버전이다. 왜냐하면 그는 지금도 매일 새롭게 업그레이드되는 중인 것 같으니까. 전시는 그가 처음 어떻게 디자이너가 되었고 어디에서 영감을 받는지 그리고 그 원동력은 무엇인지 살핀다.`
         }

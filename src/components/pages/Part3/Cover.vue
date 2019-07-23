@@ -39,9 +39,9 @@
 			return {
 				pagenum: 'page-7',
 				databrandNm: '규정하지 않는 음악',
-				background: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p05/open-1@2x.jpg',
+				background: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p05/open-1@2x.jpg',
                 backgroundP: 'right bottom',
-                backgroundR: 'http://ordinary.dev.tebah.media/vol.27/images/pages/p05/open-2@2x.jpg',
+                backgroundR: 'http://d2bdkorgfosgj9.cloudfront.net/ordinary/vol.27/images/pages/p05/open-2@2x.jpg',
                 backgroundPR: 'left bottom',
 				title: '규정하지 않는 음악',
 				txt: 'writer 류희성',
