@@ -1,4 +1,13 @@
 Ordinary Magazine Vol.27
+
+20190724
+index.html
+- css 편집을 위한 cdn 경로를 개발서버 경로로 변경
+- webfont 선언 부분의 subset 지정이 잘못 되어있어 수정
+
+core.scss
+- 커버 수관련 코드 수정
+
 20190722
 Main.vue
 - lastCover 추가를 위한 주석 해제
